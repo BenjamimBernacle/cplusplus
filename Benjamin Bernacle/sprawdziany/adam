@@ -1,0 +1,10 @@
+Grupa A:
+Stwórz klasę „książka” zawierającą:
+– pola prywatne: tytuł, autor, rok wydania
+– settery i gettery do prywatnych pól
+– metoda wypisująca informację o książce
+– lista użyta do inicjalizacji
+– konstruktor parametryczny i kopiujący
+– pole statyczne zliczające liczbę książek
+– delegowanie konstruktora bezparametrowego do konstruktora parametrycznego
+– W programie użyty konstruktor parametryczny i kopiujący

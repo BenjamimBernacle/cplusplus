@@ -1,0 +1,27 @@
+Zadanie 1: Zwierzęta
+Napisz program, w którym:
+
+Istnieje abstrakcyjna klasa Animal z czysto wirtualną metodą makeSound().
+Klasy pochodne, takie jak Dog i Cat, implementują tę metodę.
+
+ wywołaj metodę makeSound() dla każdego zwierzęcia.
+Przykładowy wynik:
+
+Skopiuj kod
+Hau!
+Miau! 
+
+
+Zadanie 2: Figury geometryczne
+Napisz program, w którym:
+
+Istnieje abstrakcyjna klasa Shape z czysto wirtualnymi metodami
+ calculateArea() oraz displayInfo().
+Klasy pochodne, takie jak Rectangle i Circle, implementują te metody:
+Rectangle oblicza pole prostokąta.
+Circle oblicza pole koła.
+Utwórz dynamicznieobiekty Rectangle i Circle,
+ a następnie wyświetl informacje o każdym z obiektów.
+Przykładowy wynik:
+Rectangle: Width = 5, Height = 10, Area = 50
+Circle: Radius = 3, Area = 28.27
