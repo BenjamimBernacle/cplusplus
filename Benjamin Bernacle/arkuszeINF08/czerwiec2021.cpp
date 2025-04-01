@@ -24,7 +24,7 @@ int main() {
     int arr[10];
     int n = 10;
     
-    cout << "Podaj 10 liczb: ";
+    cout << "Podaj 10 liczb calkowitych: ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
