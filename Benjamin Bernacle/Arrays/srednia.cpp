@@ -35,7 +35,7 @@ double srednia(const int arr[], int size)
 int main()
 {
   int size=10;
-  int arr[size];
+  int arr[10];
   generaterandom(arr, size);
   wypiszTablice(arr, size);
   std::cout<<std::endl;
