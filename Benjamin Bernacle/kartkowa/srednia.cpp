@@ -34,11 +34,11 @@ double srednia(const int arr[], int size)
 }
 int main()
 {
-  int size=10;
-  int arr[size];
-  generaterandom(arr, size);
-  wypiszTablice(arr, size);
+  
+  int arr[10];
+  generaterandom(arr, 10);
+  wypiszTablice(arr, 10);
   std::cout<<std::endl;
-  std::cout<<"Suma: "<<suma(arr, size)<<std::endl;
-  std::cout<<"srednia: "<<srednia(arr,size)<<std::endl;
+  std::cout<<"Suma: "<<suma(arr, 10)<<std::endl;
+  std::cout<<"srednia: "<<srednia(arr,10)<<std::endl;
 }
