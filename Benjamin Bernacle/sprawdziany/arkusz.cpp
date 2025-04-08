@@ -44,16 +44,16 @@ using namespace std;
 
 class Tablica {
 private:
-    int tablica[100];
+    int tablica[12];
     int liczbaElementow;
     int MAX_ROZMIAR;
 
 public:
     Tablica(int MAX_ROZMIAR) {
-        MAX_ROZMIAR = 100;
+        MAX_ROZMIAR = 12;
         this->MAX_ROZMIAR = MAX_ROZMIAR;   
         liczbaElementow = MAX_ROZMIAR;
-        srand(time(nullptr));
+        srand(time(0));
         for (int i = 0; i < liczbaElementow; ++i) {
             tablica[i] = rand() % 6 + 1;
         }
@@ -97,33 +97,17 @@ public:
         return iloczyn;
     }
 
-    // void ekstremalneWartosci(int &min, int &max) {
-    //     min = tablica[0];
-    //     max = tablica[0];
-    //     for (int i = 1; i < liczbaElementow; ++i) {
-    //         min = (tablica[i] < min) ? tablica[i] : min;
-    //         max = (tablica[i] > max) ? tablica[i] : max;
-    //     }
-    // }
-     
-    // int findMinIndex(int arr[], int start, int n) {
-    //     int minIndex = start;
-    //     for (int j = start + 1; j < n; j++) {
-    //         if (arr[j] < arr[minIndex]) {
-    //             minIndex = j;
-    //         }
-    //     }
-    //     return minIndex;
-    // }
     void findMinIndex(int &min, int &max) {
         min=tablica[0];
         max=tablica[0];
-        for (int i = 1; i < liczbaElementow; i++) {
+        int start{};
+        MAX_ROZMIAR=start;
+        for (int i =start+ 1; i < liczbaElementow; i++) {
             if (tablica[i] < tablica[min]) {
                 min = i;
             }
         }
-        for (int j = 1; j < liczbaElementow; j++) {
+        for (int j =start+ 1; j < liczbaElementow; j++) {
             if (tablica[j] > tablica[max]) {
                 max = j;
             }
@@ -132,7 +116,7 @@ public:
     }
 };
 
-// Program główny
+
 int main() {
     int rozmiar = 12;
     Tablica tab(rozmiar);
@@ -152,8 +136,8 @@ int main() {
 
     int min, max;
     tab.findMinIndex(min, max);
-    cout << "Minimalna wartosc: " << min << endl;
-    cout << "Maksymalna wartosc: " << max << endl;
+    cout << "Minimalna wartosc na indexie: " << min << endl;
+    cout << "Maksymalna wartosc na indexie: " << max << endl;
 
     return 0;
 }
