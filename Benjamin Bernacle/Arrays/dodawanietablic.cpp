@@ -23,6 +23,7 @@ void wyswietltablice(int tablica[], int rozmiar) {
 }
 
 int main() {
+    int rozmiar_tablicy=10;
     int tablica1[rozmiar_tablicy];
     int tablica2[rozmiar_tablicy];
     int wynik[rozmiar_tablicy];
