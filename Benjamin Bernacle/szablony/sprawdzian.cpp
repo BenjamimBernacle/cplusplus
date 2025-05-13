@@ -28,7 +28,6 @@ public:
     Cylinder(int h, int r, double p) : height(h), radius(r), pi(p) {}
 
     auto objetosc() {
-        cout << "[Specjalizacja int, int, double]" << endl;
         return pi * radius * radius * height;
     }
 };
